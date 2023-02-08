@@ -8,6 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -44,9 +45,13 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    LazyColumn(modifier = Modifier.fillMaxSize()) {
-        items(50){
-            Icon(imageVector = Icons.Default.Add, contentDescription = null)
+    LazyRow(modifier = Modifier.fillMaxSize()) {
+        items(50) {
+            Icon(
+                imageVector = Icons.Default.Add,
+                contentDescription = null,
+                modifier = Modifier.size(100.dp)
+            )
         }
     }
 
