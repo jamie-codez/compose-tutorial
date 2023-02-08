@@ -38,8 +38,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String) {
     Column(
-        modifier = Modifier.background(Color.Cyan),
-        horizontalAlignment = Alignment.End,
+        modifier = Modifier.background(Color.Cyan)
+            .fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         Text(text = "Hello $name!", color = Color.Blue, fontSize = 16.sp)
