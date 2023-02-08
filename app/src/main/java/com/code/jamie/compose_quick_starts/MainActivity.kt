@@ -10,7 +10,10 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import com.code.jamie.compose_quick_starts.ui.theme.Compose_quick_startsTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,7 +35,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+    Text(
+        text = "Hello $name!",
+        color = Color.Blue,
+        fontSize = 20.sp,
+        fontFamily = FontFamily.Cursive
+    )
 }
 
 @Preview(showBackground = true)
