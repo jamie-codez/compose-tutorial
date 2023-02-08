@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String) {
     Column(
         modifier = Modifier.background(Color.Cyan)
-            .fillMaxSize(),
+            .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
