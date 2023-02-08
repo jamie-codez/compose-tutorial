@@ -43,9 +43,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    if (name.length > 5) {
-        Icon(imageVector = Icons.Default.Add, contentDescription = null)
+    Column {
+        for (i in 1..20) {
+            Icon(imageVector = Icons.Default.Add, contentDescription = null)
+        }
     }
+
 }
 
 @Preview(showBackground = true)
