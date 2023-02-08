@@ -4,10 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -42,7 +39,8 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String) {
     Column(
         modifier = Modifier.background(Color.Cyan),
-        horizontalAlignment = Alignment.End
+        horizontalAlignment = Alignment.End,
+        verticalArrangement = Arrangement.Center
     ) {
         Text(text = "Hello $name!", color = Color.Blue, fontSize = 16.sp)
         Text(text = "Some other text", color = Color.Blue, fontSize = 16.sp)
