@@ -1,5 +1,6 @@
 package com.code.jamie.compose_quick_starts
 
+import android.graphics.Paint.Align
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -37,14 +38,23 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Column(
-        modifier = Modifier.background(Color.Cyan)
+    Box(
+        modifier = Modifier
+            .background(Color.Cyan)
             .size(400.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "Hello $name!", color = Color.Blue, fontSize = 16.sp, modifier = Modifier.fillMaxSize())
-        Text(text = "Some other text", color = Color.Blue, fontSize = 16.sp)
+        Text(
+            text = "Hello $name!",
+            color = Color.Blue,
+            fontSize = 30.sp,
+            modifier = Modifier.align(Alignment.BottomEnd)
+        )
+        Text(
+            text = "Some other text",
+            color = Color.Blue,
+            fontSize = 30.sp,
+            modifier = Modifier.align(Alignment.TopStart)
+        )
     }
 }
 
