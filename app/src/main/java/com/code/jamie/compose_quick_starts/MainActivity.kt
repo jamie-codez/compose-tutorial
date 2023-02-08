@@ -43,7 +43,7 @@ fun Greeting(name: String) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "Hello $name!", color = Color.Blue, fontSize = 16.sp)
+        Text(text = "Hello $name!", color = Color.Blue, fontSize = 16.sp, modifier = Modifier.fillMaxSize())
         Text(text = "Some other text", color = Color.Blue, fontSize = 16.sp)
     }
 }
