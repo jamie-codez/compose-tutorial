@@ -46,6 +46,7 @@ fun Greeting(name: String) {
         modifier = Modifier
             .background(Color.Green)
             .padding(16.dp)
+            .background(Color.Cyan)
     )
 }
 
