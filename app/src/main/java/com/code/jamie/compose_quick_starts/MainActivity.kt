@@ -44,8 +44,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    LazyColumn {
-        items(20){
+    LazyColumn(modifier = Modifier.fillMaxSize()) {
+        items(50){
             Icon(imageVector = Icons.Default.Add, contentDescription = null)
         }
     }
