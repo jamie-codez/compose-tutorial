@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -38,16 +39,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(
-        text = "Hello $name!",
-        color = Color.Blue,
-        fontSize = 20.sp,
-        fontFamily = FontFamily.Cursive,
-        modifier = Modifier
-            .background(Color.Green)
-            .padding(16.dp)
-            .background(Color.Cyan)
-    )
+    Column(modifier = Modifier.background(Color.Cyan)) {
+        Text(text = "Hello $name!", color = Color.Blue, fontSize = 16.sp)
+        Text(text = "Some other text", color = Color.Blue, fontSize = 16.sp)
+    }
 }
 
 @Preview(showBackground = true)
