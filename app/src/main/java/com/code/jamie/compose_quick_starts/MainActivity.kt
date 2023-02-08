@@ -12,6 +12,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
@@ -39,7 +40,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Column(modifier = Modifier.background(Color.Cyan)) {
+    Column(
+        modifier = Modifier.background(Color.Cyan),
+        horizontalAlignment = Alignment.End
+    ) {
         Text(text = "Hello $name!", color = Color.Blue, fontSize = 16.sp)
         Text(text = "Some other text", color = Color.Blue, fontSize = 16.sp)
     }
